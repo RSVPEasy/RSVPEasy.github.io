@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVPEasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <div class="header-block">
+            <h1>RSVPEasy</h1>
+        </div>
+
+        <div id="form-container">
+            <form id="eventForm" class="event-form">
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Type something..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send event</button>
+                <p id="statusMessage" class="status-message" aria-live="polite"></p>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
